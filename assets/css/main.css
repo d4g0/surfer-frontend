@@ -1,0 +1,157 @@
+.\? {
+    @apply border border-black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* transitions */
+
+/* fade */
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 0.45s;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+/* fade-slow */
+
+.fade-slow-enter-active, .fade-slow-leave-active {
+    transition: opacity 0.3s;
+}
+
+.fade-slow-enter, .fade-slow-leave-to {
+    opacity: 0;
+}
+
+/* fade-from-up */
+
+.fade-from-up-enter-active, .fade-from-up-leave-active {
+    transition: all 0.15s;
+}
+
+.fade-from-up-enter, .fade-from-up-leave-to {
+    opacity: 0;
+    margin-top: -5rem;
+}
+
+/* fade-from-left */
+
+.fade-from-left-enter-active, .fade-from-left-leave-active {
+    transition: all 0.25s;
+}
+
+.fade-from-left-enter, .fade-from-left-leave-to {
+    opacity: 0;
+    transform: translate3d(-5rem, 0, 0);
+}
+
+/* fade-from-bottom */
+
+.fade-from-bottom-enter-active, .fade-from-bottom-leave-active {
+    transition: all 0.25s;
+}
+
+.fade-from-bottom-enter, .fade-from-bottom-leave-to {
+    opacity: 0;
+    transform: translate3d(0, 2rem, 0);
+}
+
+/* PAGE */
+
+.page-enter-active, .page-leave-active {
+    transition: opacity 0.5s;
+}
+
+.page-enter, .page-leave-to {
+    opacity: 0;
+}
+
+/* Layout */
+
+.layout-enter-active, .layout-leave-active {
+    transition: all 0.9s
+}
+
+.layout-enter, .layout-leave-active {
+    opacity: 0
+}
+
+/* IOS INPPUTs SHADOW RESET */
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    -webkit-appearance: none;
+}
+
+.blured-5 {
+    backdrop-filter: blur(10px);
+}
+
+.bg-blured-white {
+    background: rgba(255, 255, 255, 0.705);
+    backdrop-filter: blur(15px);
+}
+
+.native-bounce {
+    animation: bounce-size 3s ease;
+}
+
+@keyframes bounce-size {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+    100% {
+        width: 500px;
+        height: 30px;
+    }
+}
+
+@keyframes pulse-bg-animation {
+    0%, 100% {
+        background-color: rgb(241, 241, 241);
+    }
+    50% {
+        background-color: #dddddd;
+    }
+}
+
+.bg-pulse {
+    animation: pulse-bg-animation 1.4s infinite;
+}
+
+/* NAV LINKS */
+
+.nuxt-link-exact-active {
+    @apply opacity-100;
+}
+
+.nuxt-link-active {
+    @apply opacity-100;
+}
+/* scroll styles */
+
+/* ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(93, 91, 91, 0.856);
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background-color: rgba(182, 179, 179, 0.623);
+} */

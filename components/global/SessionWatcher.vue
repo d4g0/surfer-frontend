@@ -9,9 +9,8 @@ export default {
     }),
   },
   watch: {
-    isLogedIn: function (newValue, oldValue) {
-
-      if (!newValue) {
+    isLogedIn: function (newLogedInValue, oldLogedInValue) {
+      if (!newLogedInValue) {
         this.$router.push("login");
       }
     },

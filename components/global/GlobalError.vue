@@ -3,7 +3,7 @@
     <transition name="fade">
       <div
         v-if="isErrorActive"
-        class="fixed top-0 left-0 w-full z-50 p-6 bg-red-700 dark:bg-red-800 shadow-2xl"
+        class="fixed top-0 left-0 w-full z-50 p-6 text-white dark:text-gray-300 bg-red-500 dark:bg-red-800 shadow-2xl"
       >
         {{ error }}
       </div>
@@ -15,7 +15,7 @@
 import { mapGetters } from "vuex";
 export default {
   computed: {
-    ...mapGetters("globalNotifiaction/", ["error", "isErrorActive"]),
+    ...mapGetters("globalNotification/", ["error", "isErrorActive"]),
   },
 };
 </script>

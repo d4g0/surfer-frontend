@@ -39,13 +39,13 @@ export const mutations = {
 
     // error
     updateError: (state, { error }) => {
-        state.isActive = false;
+        state.isErrorActive = false;
         state.error = error;
-        state.isActive = true;
+        state.isErrorActive = true;
     },
 
     clearError: (state) => {
-        state.isActive = false;
+        state.isErrorActive = false;
         state.error = ""
     }
 
