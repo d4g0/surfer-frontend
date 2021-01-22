@@ -3,7 +3,7 @@ export default {
   target: 'static',
 
   generate: {
-    dir: 'public',
+    dir: 'docs',
     fallback: '404.html'
   },
 
