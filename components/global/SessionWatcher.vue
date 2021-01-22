@@ -1,14 +1,17 @@
 <template></template>
 
 <script>
-// import { mapState } from "vuex";
+import { mapState } from "vuex";
 export default {
+  computed: {
+    ...mapState("auth/", {
+      isLogedIn: (state) => state.isLogedIn,
+    }),
+  },
   watch: {
-    ["$store.auth.isLogedIn"](newValue, oldValue) {
-      console.log("*** Loged Change detected ***");
+    isLogedIn: function (newValue, oldValue) {
 
-      if (!this.$store.auth.isLogedIn) {
-        console.log("*** Loged Out detected ***");
+      if (!newValue) {
         this.$router.push("login");
       }
     },

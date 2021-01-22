@@ -1,6 +1,6 @@
 <template>
   <div>
-    <article class="bg-white p-10 rounded-2xl max-w-sm mx-auto">
+    <article class="bg-white p-10 mt-16 rounded-2xl max-w-sm mx-auto">
       <h1 class="font-bold text-4xl opacity-75 text-center">Sing In</h1>
 
       <ul class="mt-10 flex justify-between">
