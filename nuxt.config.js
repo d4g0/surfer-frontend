@@ -6,6 +6,11 @@ export default {
     dir: 'docs',
     fallback: '404.html'
   },
+  // github pages only
+
+  router:{
+    base: '/surfer-frontend/'
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
